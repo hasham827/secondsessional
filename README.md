@@ -1,6 +1,18 @@
+![Profile Header Image](https://github.com/hasham827/QuizApp/blob/master/Screen%20Shots/fff.png)
 # secondsessional
 
-A new Flutter application.
+Dice Roliing App
+
+## Screenshots
+
+<p align="start">
+  <img width="200" height="370" src="https://github.com/hasham827/secondsessional/blob/master/assets/images/main.jpeg">
+  <img width="200" height="370" src="https://github.com/hasham827/secondsessional/blob/master/assets/images/easst.jpeg">
+  <img width="200" height="370" src="https://github.com/hasham827/secondsessional/blob/master/assets/images/hard.jpeg">
+  
+ 
+</p>
+
 
 ## Getting Started
 
