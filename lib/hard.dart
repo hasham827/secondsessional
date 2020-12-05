@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage2> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar( backgroundColor: Colors.purple,
-            title: Text('Dice App',style: TextStyle(fontSize:25, color: Colors.white, fontWeight:FontWeight.bold)),
+            title: Text('Hard Level',style: TextStyle(fontSize:25, color: Colors.white, fontWeight:FontWeight.bold)),
             leading: GestureDetector(
                 onTap: () {
                 },
@@ -90,27 +90,178 @@ class _HomePageState extends State<HomePage2> {
 
               ),
               Container(
-                  margin: EdgeInsets.only(top: 40.0),
-                  child: Column(
-                    children:[
-                      Card(
-                        child: ListTile(
-                          selectedTileColor: Colors.purpleAccent,
-                          //contentPadding: const EdgeInsets.all(16.0),
-                          title: Text("Score :" ,style: TextStyle(fontSize:20, color: Colors.purple, fontWeight:FontWeight.bold)),
-                        ),
-                      ),
-                      Card(
-                        child: ListTile(
-                          //contentPadding: const EdgeInsets.all(16.0),
-                          title: Text("Total:" ,style: TextStyle(fontSize:20, color: Colors.purple, fontWeight:FontWeight.bold)),
-                        ),
-                      ),
+
+                margin: EdgeInsets.only(top: 50.0),
+                child: Text(
+                    " Guess your Number ",style: TextStyle(fontSize:25, color: Colors.white, fontWeight:FontWeight.bold)
+                ),
+
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 20.0,top: 80),
+                height: 60,
+                width: 60.0,
+                padding: EdgeInsets.all(5.0),
+                child: FlatButton(
+                  onPressed: () => {
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                     // builder: (context) => HomePage(),
+                    )
+                    ),
+                  },
+                  //padding: EdgeInsets.all(5.0),
+                  child: Column( // Replace with a Row for horizontal icon + text
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+
+                      Icon(FontAwesomeIcons.diceOne,color: Colors.white,size: 40,),
+
+                      SizedBox(height: 5,),
+
 
                     ],
+                  ),
+                ),
 
-                  )
               ),
+              Container(
+                margin: EdgeInsets.only(left: 80.0,top: 80),
+
+                height: 60,
+                width: 60.0,
+                padding: EdgeInsets.all(5.0),
+                child: FlatButton(
+                  onPressed: () => {
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      //builder: (context) => HomePage(),
+                    )
+                    ),
+                  },
+                  //padding: EdgeInsets.all(5.0),
+                  child: Column( // Replace with a Row for horizontal icon + text
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+
+                      Icon(FontAwesomeIcons.diceTwo,color: Colors.white,size: 40,),
+
+                      SizedBox(height: 5,),
+
+
+                    ],
+                  ),
+                ),
+
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 150.0,top: 80),
+                height: 60,
+                width: 60.0,
+                padding: EdgeInsets.all(5.0),
+                child: FlatButton(
+                  onPressed: () => {
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      //builder: (context) => HomePage(),
+                    )
+                    ),
+                  },
+                  //padding: EdgeInsets.all(5.0),
+                  child: Column( // Replace with a Row for horizontal icon + text
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+
+                      Icon(FontAwesomeIcons.diceThree,color: Colors.white,size: 40,),
+
+                      SizedBox(height: 5,),
+
+
+                    ],
+                  ),
+                ),
+
+              ),
+
+              Container(
+                margin: EdgeInsets.only(left: 20.0,top: 140),
+                height: 60,
+                width: 60.0,
+                padding: EdgeInsets.all(5.0),
+                child: FlatButton(
+                  onPressed: () => {
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                     // builder: (context) => HomePage(),
+                    )
+                    ),
+                  },
+                  //padding: EdgeInsets.all(5.0),
+                  child: Column( // Replace with a Row for horizontal icon + text
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+
+                      Icon(FontAwesomeIcons.diceFour,color: Colors.white,size: 40,),
+
+                      SizedBox(height: 5,),
+
+
+                    ],
+                  ),
+                ),
+
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 80.0,top: 140),
+                height: 60,
+                width: 60.0,
+                padding: EdgeInsets.all(5.0),
+                child: FlatButton(
+                  onPressed: () => {
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      //builder: (context) => HomePage(),
+                    )
+                    ),
+                  },
+                  //padding: EdgeInsets.all(5.0),
+                  child: Column( // Replace with a Row for horizontal icon + text
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+
+                      Icon(FontAwesomeIcons.diceFive,color: Colors.white,size: 40,),
+
+                      SizedBox(height: 5,),
+
+
+                    ],
+                  ),
+                ),
+
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 150.0,top: 140),
+                height: 60,
+                width: 60.0,
+                padding: EdgeInsets.all(5.0),
+                child: FlatButton(
+                  onPressed: () => {
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      //builder: (context) => HomePage(),
+                    )
+                    ),
+                  },
+                  //padding: EdgeInsets.all(5.0),
+                  child: Column( // Replace with a Row for horizontal icon + text
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+
+                      Icon(FontAwesomeIcons.diceSix,color: Colors.white,size: 40,),
+
+                      SizedBox(height: 5,),
+
+
+                    ],
+                  ),
+                ),
+
+              ),
+
               Container(
                 margin: EdgeInsets.only(left: 200,top: 10.0),
                 child: Text(
