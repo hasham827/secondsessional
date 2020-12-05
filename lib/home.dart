@@ -11,14 +11,22 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar( backgroundColor: Colors.purple,
           title: Text('Dice App',style: TextStyle(fontSize:25, color: Colors.white, fontWeight:FontWeight.bold)),
-            leading: GestureDetector(
-                onTap: () {
-               },
-                child: Icon(
-                  Icons.menu,  // add custom icons also
-                )
-            )
         ),
+        drawer: Drawer(
+          child: ListView(
+            children: <Widget>[
+              ListTile(
+                title: Text("Ttem 1"),
+                trailing: Icon(Icons.arrow_forward),
+              ),
+              ListTile(
+                title: Text("Item 2"),
+                trailing: Icon(Icons.arrow_forward),
+              ),
+            ],
+          ),
+        ),
+
         body: Stack(
           children: <Widget>[
             ClipPath(
@@ -48,7 +56,7 @@ class HomePage extends StatelessWidget {
                 child: FlatButton(
                   onPressed: () => {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      builder: (context) => HomePage1(),
+                      builder: (context) => HomePage3(),
                     )
                     ),
                   },
