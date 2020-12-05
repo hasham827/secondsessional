@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'simple.dart';
+import 'hard.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class HomePage extends StatelessWidget {
@@ -76,6 +77,10 @@ class HomePage extends StatelessWidget {
               padding: EdgeInsets.all(5.0),
               child: FlatButton(
                 onPressed: () => {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (context) => HomePage2(),
+                  )
+                  ),
                 },
                 //padding: EdgeInsets.all(10.0),
                 child: Column( // Replace with a Row for horizontal icon + text
