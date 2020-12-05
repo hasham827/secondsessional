@@ -12,9 +12,9 @@ class HomePage extends StatelessWidget {
             leading: GestureDetector(
                 onTap: () {
                },
-                //child: Icon(
-                  //Icons.menu_book,  // add custom icons also
-               // )
+                child: Icon(
+                  Icons.menu,  // add custom icons also
+                )
             )
         ),
         body: Stack(
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                   child: Column( // Replace with a Row for horizontal icon + text
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      //Icon(FontAwesomeIcons.dice,color: Colors.white,size: 50,),
+                      Icon(FontAwesomeIcons.dice,color: Colors.white,size: 50,),
                       SizedBox(height: 15,),
                       Text("Easy ",style: TextStyle(fontSize:20,color: Colors.white ,fontWeight:FontWeight.bold),
                       )
@@ -76,7 +76,7 @@ class HomePage extends StatelessWidget {
                 child: Column( // Replace with a Row for horizontal icon + text
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    //Icon(FontAwesomeIcons.dice,color: Colors.white,size: 50,),
+                    Icon(FontAwesomeIcons.dice,color: Colors.white,size: 50,),
 
                     SizedBox(height: 15,),
                     Text("Hard ",style: TextStyle(fontSize:20,color: Colors.white ,fontWeight:FontWeight.bold),
